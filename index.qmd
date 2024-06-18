@@ -1,0 +1,92 @@
+---
+title: "Quarto do Alex"
+bibliography: [references.bib, packages.bib]
+params:
+ data: "2024-06-12"
+---
+
+# 01. Caminhos com here()
+
+```{r}
+#install.packages("here)
+here::here()
+here::here("styles.css")
+```
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```{r}
+1 + 1
+```
+
+# 02. Bônus! Trocar idioma
+
+No `_quarto.yml`
+
+```         
+lang:pt
+```
+
+# 03. Chunks `#|`
+
+![](images/clipboard-1069107497.png)
+
+``` r
+#fs::file_move("~/Downloads/gato.webp", "images")
+```
+
+```{r, out.width="50%", fig.align='center', echo=FALSE, fig.cap="Homenagem pra Jéssica"}
+```
+
+```{r, out.width="50%", fig.align='center', echo=FALSE, fig.cap="Homenagem pra Jéssica"}
+#| out-width: "50%"
+#| fig-align: "center"
+#| echo: false
+#| fig-cap: "Um gatinho"
+```
+
+```         
+knitr::include_graphics(here::here("images/clipboard-1069107497
+```
+
+Podemos usar `knitr::convert_chunk_header()`
+
+```         
+knitr::convert_chunk_header=("index.qmd", "index2.qmd")
+cria um arquivo que arruma os cabecalhos antigos e mexe.
+```
+
+# 04. Citações no Visual editor
+
+Segundo @ggplot2; @tidyr, computadores são. @ggplot2 isso é bom.
+
+```         
+knitr::write_bib("here","packages.bib")
+knitr::write_bib(c("here", "tidyverse", "packages.bib"))
+```
+
+Tidyverse: @tidyr. Here: @R-here
+
+# 05. Include ou child
+
+{{< include about.qmd >}}
+
+# 06. Usando parâmetros
+
+```{r}
+params$data
+```
+
+# 07. Inline + formatacao
+
+`r pi`
+
+`r nrow(palmerpenguins::penguins)` linhas.
+
+# 10. Font Awesome
+
+``` r
+quarto install extension quarto-ext/fontawesome
+```

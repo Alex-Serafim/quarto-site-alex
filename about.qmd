@@ -1,0 +1,9 @@
+---
+title: "About"
+---
+
+Um chunk externo
+
+```{r}
+1 + 1
+```
