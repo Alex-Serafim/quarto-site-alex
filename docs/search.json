@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About",
+    "section": "",
+    "text": "01. Caminhos com here()\n\n#install.packages(\"here)\nhere::here()\n\n[1] \"C:/Users/Windows/OneDrive/Documentos/meu-blog/quarto-site-alex\"\n\nhere::here(\"styles.css\")\n\n[1] \"C:/Users/Windows/OneDrive/Documentos/meu-blog/quarto-site-alex/styles.css\"\n\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2\n\n\n\n\n02. Bônus! Trocar idioma\nNo _quarto.yml\nlang:pt\n\n\n03. Chunks #|\n\n#fs::file_move(\"~/Downloads/gato.webp\", \"images\")\nknitr::include_graphics(here::here(\"images/clipboard-1069107497\nPodemos usar knitr::convert_chunk_header()\nknitr::convert_chunk_header=(\"index.qmd\", \"index2.qmd\")\ncria um arquivo que arruma os cabecalhos antigos e mexe.\n\n\n04. Citações no Visual editor\nSegundo Wickham (2016); Wickham, Vaughan, e Girlich (2023), computadores são. Wickham (2016) isso é bom.\nknitr::write_bib(\"here\",\"packages.bib\")\nknitr::write_bib(c(\"here\", \"tidyverse\", \"packages.bib\"))\nTidyverse: Wickham, Vaughan, e Girlich (2023). Here: Müller (2020)\n\n\n05. Include ou child\nUm chunk externo\n\n1 + 1\n\n[1] 2\n\n\n\n\n06. Usando parâmetros\n\nparams$data\n\n[1] \"2024-06-12\"\n\n\n\n\n07. Inline + formatacao\n3.1415927\n344 linhas.\n\n\n10. Font Awesome\nquarto install extension quarto-ext/fontawesome\n\n\n\n\n\nReferências\n\nMüller, Kirill. 2020. here: A Simpler Way to Find Your Files. https://here.r-lib.org/.\n\n\nWickham, Hadley. 2016. «ggplot2: Elegant Graphics for Data Analysis». https://ggplot2.tidyverse.org.\n\n\nWickham, Hadley, Davis Vaughan, e Maximilian Girlich. 2023. «tidyr: Tidy Messy Data». https://CRAN.R-project.org/package=tidyr."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Um chunk externo\n\n1 + 1\n\n[1] 2"
+  }
+]
